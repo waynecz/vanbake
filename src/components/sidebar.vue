@@ -31,7 +31,7 @@ export default {
   computed: {
     bClass() {
       const menu = JSON.parse(JSON.stringify(this.pages));
-      return `b${menu.findIndex(e => e.t = this.page) + 1}.png`
+      return `b${menu.findIndex(e => e.t === this.page) + 1}.png`
     }
   },
   methods: {
