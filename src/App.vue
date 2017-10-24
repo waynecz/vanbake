@@ -199,7 +199,7 @@
       changePage(page) {
         Object.keys(this.pageMap).forEach(e => {
           if (e === page)
-            document.body.scrollTop = this.pageMap[e].top - 100;
+            (document.documentElement || document.body).scrollTop = this.pageMap[e].top - 100;
         });
         this.page = page;
       }
@@ -218,7 +218,6 @@
       document.addEventListener('scroll', () => {
         requestAnimationFrame(() => {
           const top = (document.documentElement.scrollTop || document.body.scrollTop);
-          console.log(top)
           self.sideShow = top > sy.offsetHeight + sy.offsetTop - 300;
           self.judgeWhichPage(top);
         })
