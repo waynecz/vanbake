@@ -217,7 +217,8 @@
 
       document.addEventListener('scroll', () => {
         requestAnimationFrame(() => {
-          const top = document.body.scrollTop;
+          const top = (document.documentElement.scrollTop || document.body.scrollTop);
+          console.log(top)
           self.sideShow = top > sy.offsetHeight + sy.offsetTop - 300;
           self.judgeWhichPage(top);
         })

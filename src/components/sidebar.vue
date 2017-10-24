@@ -18,6 +18,7 @@ export default {
   data () {
     return {
       pages: [
+        { t: 'sy'},
         { t: 'fggs'},
         { t: 'fzlc'},
         { t: 'rsxb'},
@@ -31,7 +32,7 @@ export default {
   computed: {
     bClass() {
       const menu = JSON.parse(JSON.stringify(this.pages));
-      return `b${menu.findIndex(e => e.t === this.page) + 1}.png`
+      return `b${menu.findIndex(e => e.t === this.page)}.png`
     }
   },
   methods: {
