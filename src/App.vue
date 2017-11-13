@@ -72,7 +72,7 @@
         <div class="rs">
           <img src="/static/img/p7-2.png" class="rs-pic">
           <h5>招商加盟请联系：</h5>
-          <small class="x">13666665520</small>
+          <small class="x">4000666060</small>
         </div>
       </div>
       <div class="lx-box">
